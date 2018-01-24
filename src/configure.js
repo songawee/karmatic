@@ -108,7 +108,8 @@ export default function configure(options) {
 
 		customLaunchers: {
 			KarmaticChrome: {
-				base: 'Chrome'
+				base: 'Chrome',
+				chromeDataDir: path.resolve(__dirname, ".chrome")
 			},
 			KarmaticChromeHeadless: {
 				base: 'ChromeHeadless',
